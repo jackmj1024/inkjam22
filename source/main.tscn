@@ -1,10 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfy6t6f0ps81a"]
+[gd_scene load_steps=9 format=3 uid="uid://dgx4o0k1bn4i2"]
 
-[ext_resource type="Shader" path="res://dither/dither.gdshader" id="1_g8bbi"]
-[ext_resource type="Texture2D" uid="uid://defm5hrgrt8jh" path="res://dither/palette_hollow.png" id="3_c5ee0"]
-[ext_resource type="Texture2D" uid="uid://c1qfpa4hpd87n" path="res://dither/bayer16tile2.png" id="3_l5c2l"]
-[ext_resource type="PackedScene" uid="uid://c5bctgrglqs5b" path="res://ship.tscn" id="4_ndpmt"]
+[ext_resource type="Script" path="res://Main.cs" id="1_b4cpp"]
+[ext_resource type="Shader" path="res://shaders/dither/dither.gdshader" id="1_g8bbi"]
+[ext_resource type="Texture2D" uid="uid://defm5hrgrt8jh" path="res://shaders/dither/palette_hollow.png" id="3_c5ee0"]
+[ext_resource type="Texture2D" uid="uid://c1qfpa4hpd87n" path="res://shaders/dither/bayer16tile2.png" id="3_l5c2l"]
+[ext_resource type="PackedScene" uid="uid://daryhni7dt74n" path="res://ship/ship.tscn" id="4_ndpmt"]
 [ext_resource type="Environment" uid="uid://bw5d5yn2gs1o" path="res://environment.tres" id="5_2cy1j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbier"]
+size = Vector3(500, 1, 500)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0ecbi"]
 shader = ExtResource("1_g8bbi")
@@ -15,34 +19,62 @@ shader_parameter/u_dither_size = 2
 shader_parameter/u_dither_tex = ExtResource("3_l5c2l")
 shader_parameter/u_offset = null
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_hbier"]
-size = Vector3(441.565, 1, 418.549)
-
 [node name="Main" type="Node3D"]
+script = ExtResource("1_b4cpp")
+playerObject = ExtResource("4_ndpmt")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-material = SubResource("ShaderMaterial_0ecbi")
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
-handle_input_locally = false
-size = Vector2i(1920, 1080)
-render_target_update_mode = 4
-
-[node name="Sun" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
+[node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Ship" parent="SubViewportContainer/SubViewport" instance=ExtResource("4_ndpmt")]
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37728, 0)
+shape = SubResource("BoxShape3D_hbier")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_0ecbi")
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(700, 700)
+render_target_update_mode = 4
 
 [node name="Camera" type="Camera3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 20.0806, 11.6653)
 environment = ExtResource("5_2cy1j")
 current = true
 
-[node name="StaticBody3d" type="StaticBody3D" parent="."]
+[node name="NetworkMenu" type="VBoxContainer" parent="."]
+offset_right = 90.0
+offset_bottom = 101.0
 
-[node name="CollisionShape3d" type="CollisionShape3D" parent="StaticBody3d"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37728, 0)
-shape = SubResource("BoxShape3D_hbier")
+[node name="IPField" type="LineEdit" parent="NetworkMenu"]
+layout_mode = 2
+offset_right = 90.0
+offset_bottom = 31.0
+placeholder_text = "IP Address"
+
+[node name="HostButton" type="Button" parent="NetworkMenu"]
+layout_mode = 2
+offset_top = 35.0
+offset_right = 90.0
+offset_bottom = 66.0
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="NetworkMenu"]
+layout_mode = 2
+offset_top = 70.0
+offset_right = 90.0
+offset_bottom = 101.0
+text = "Join"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://ship/ship.tscn")
+spawn_path = NodePath("..")
+
+[connection signal="pressed" from="NetworkMenu/HostButton" to="." method="Host"]
+[connection signal="pressed" from="NetworkMenu/JoinButton" to="." method="Join"]

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BbgYZxNaxRL+qwNlh2+XDvQEliPcTZBLns8zm3VD/kIajfntreDwZirMVN3Rek2oRwO1s40XzXerwgnZzCkK0g==",
+  "success": true,
+  "projectFilePath": "/home/jack/Data/Shared/Projects/inkjam22/source/Source.csproj",
+  "expectedPackageFiles": [
+    "/home/jack/.local/share/godot/mono/GodotNuGetFallbackFolder/godot.sourcegenerators/4.0.0-beta2/godot.sourcegenerators.4.0.0-beta2.nupkg.sha512",
+    "/home/jack/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharp/4.0.0-beta2/godotsharp.4.0.0-beta2.nupkg.sha512",
+    "/home/jack/.local/share/godot/mono/GodotNuGetFallbackFolder/godotsharpeditor/4.0.0-beta2/godotsharpeditor.4.0.0-beta2.nupkg.sha512",
+    "/home/jack/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

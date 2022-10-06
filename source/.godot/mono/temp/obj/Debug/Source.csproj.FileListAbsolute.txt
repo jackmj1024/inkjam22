@@ -1,0 +1,17 @@
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/Source.deps.json
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/Source.runtimeconfig.json
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/Source.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/ref/Source.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/Source.pdb
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.csproj.AssemblyReference.cache
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.GeneratedMSBuildEditorConfig.editorconfig
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.AssemblyInfoInputs.cache
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.AssemblyInfo.cs
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.csproj.CoreCompileInputs.cache
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.csproj.CopyComplete
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/ref/Source.dll
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.pdb
+/home/jack/Data/Shared/Projects/inkjam22/source/.godot/mono/temp/obj/Debug/Source.genruntimeconfig.cache
