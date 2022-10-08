@@ -1,2 +1,9 @@
+CSGBox3D
+DirectionalLight3D
+Node3D
+Area3D
+Camera3D
+Area2D
+GridMap
 Decal
 CenterContainer

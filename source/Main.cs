@@ -42,6 +42,6 @@ public partial class Main : Node3D {
     private void SpawnPlayer(long _id=1) {
         Ship _ship = playerObject.Instantiate<Ship>();
         _ship.Name = _id.ToString();
-        AddChild(_ship);
+        GetNode<SubViewport>("SubViewportContainer/SubViewport").AddChild(_ship);
     }
 }
