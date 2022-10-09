@@ -1,0 +1,414 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7qk8tsnvxyxl"]
+
+[ext_resource type="PackedScene" uid="uid://c136bbchpcbr2" path="res://tracks/pieces/track_straight.tscn" id="1_nv0kh"]
+[ext_resource type="PackedScene" uid="uid://byex6puwbe5jl" path="res://tracks/pieces/track_half.tscn" id="2_itmsk"]
+
+[node name="Track1" type="Node3D"]
+
+[node name="TrackStraight" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(-2.18569e-06, 0, -50.0027, 0, 50.0027, 0, 50.0027, 0, -2.18569e-06, 0, 0, 0)
+
+[node name="TrackStraight2" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(6.55706e-06, 0, -50.0027, 0, 50.0027, 0, 50.0027, 0, 6.55706e-06, 5.74785e-06, 0, -89.5086)
+
+[node name="TrackStraight3" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(6.55706e-06, 0, -50.0027, 0, 50.0027, 0, 50.0027, 0, 6.55706e-06, -6.07131e-06, 0, -179.639)
+
+[node name="TrackStraight4" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(6.55706e-06, 0, -50.0027, 0, 50.0027, 0, 50.0027, 0, 6.55706e-06, -1.71977e-05, 0, -264.486)
+
+[node name="TrackStraight5" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(6.55706e-06, 0, -50.0027, 0, 50.0027, 0, 50.0027, 0, 6.55706e-06, -2.82027e-05, 0, -348.408)
+
+[node name="TrackStraight6" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(-7.2726, 0, 49.471, 0, 50.0027, 0, -49.471, 0, -7.2726, -7.73234, 0, -434.635)
+
+[node name="TrackStraight9" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(-39.7681, 3.62437e-07, 34.3517, 2.6991e-07, 50.0029, -2.76267e-07, -30.3106, -3.02595e-08, -45.0703, -65.1021, -3.68027e-08, -546.537)
+
+[node name="TrackStraight7" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(-19.8288, 0, 45.903, 0, 50.0027, 0, -45.903, 0, -19.8288, -36.578, 0, -511.082)
+
+[node name="TrackStraight8" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(-48.7876, 0, 8.80536, 0, 50.0027, 0, -10.9563, 0, -39.2097, -113.965, 0, -573.705)
+
+[node name="TrackStraight10" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -201.615, 0, -582.777)
+
+[node name="TrackStraight11" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -293.578, 0, -582.777)
+
+[node name="TrackStraight12" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -383.106, 0, -582.777)
+
+[node name="TrackStraight13" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -472.301, 0, -582.777)
+
+[node name="TrackStraight14" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -555.769, 0, -582.777)
+
+[node name="TrackStraight15" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -643.097, 0, -582.777)
+
+[node name="TrackStraight16" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -728.993, 0, -582.777)
+
+[node name="TrackStraight17" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(50.0027, 0, 0, 0, 50.0027, 0, 0, 0, 40.1862, -817.752, 0, -582.777)
+
+[node name="TrackStraight18" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(48.2989, 0, 10.401, 0, 50.0027, 0, -12.9416, 0, 38.8169, -905.732, 0, -569.77)
+
+[node name="TrackStraight19" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(34.5157, 0, 29.0766, 0, 50.0027, 0, -36.1792, 0, 27.7396, -983.129, 0, -520.495)
+
+[node name="TrackStraight20" parent="." instance=ExtResource("1_nv0kh")]
+transform = Transform3D(34.5157, 0, 29.0766, 0, 50.0027, 0, -36.1792, 0, 27.7396, -983.129, 0, -520.495)
+
+[node name="TrackHalf" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(44.3437, 0, 23.1006, 0, 50, 0, -23.1006, 0, 44.3437, -958.674, -1.12842, -577.876)
+
+[node name="Node3d3" type="Node3D" parent="."]
+transform = Transform3D(34.5157, 0, 29.0766, 0, 50.0027, 0, -36.1792, 0, 27.7396, -983.129, 0, -520.495)
+
+[node name="TrackStraight22" parent="Node3d3" instance=ExtResource("1_nv0kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Node3d4" type="Node3D" parent="."]
+transform = Transform3D(33.7968, 0, -29.617, 0, 50.0027, 0, 36.8517, 0, 27.1618, -743.682, 0, -236.226)
+
+[node name="TrackStraight18" parent="Node3d4" instance=ExtResource("1_nv0kh")]
+transform = Transform3D(4.64098, 0, -35.7897, 0, 50.0027, 0, 54.2759, 0, 14.4151, 626.104, 0, -1064.26)
+
+[node name="TrackHalf18" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-11.0247, 0, -48.7694, 0, 50, 0, 48.7694, 0, -11.0247, -1076.64, 0, -403.068)
+
+[node name="TrackHalf19" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-12.6651, -2.48989e-07, -48.3694, -5.86506e-08, 50, -2.42026e-07, 48.3694, -4.56786e-09, -12.6651, -1014.01, 0, -385.025)
+
+[node name="TrackHalf20" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(44.8679, 0, 22.0651, 0, 50, 0, -22.0651, 0, 44.8679, -1119.63, 0, -339.148)
+
+[node name="TrackHalf21" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(16.124, 0, 47.3288, 0, 50, 0, -47.3288, 0, 16.124, -1032.92, 0, -298.21)
+
+[node name="TrackHalf22" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(45.7873, 0, 20.0878, 0, 50, 0, -20.0878, 0, 45.7873, -1087.74, 0, -239.08)
+
+[node name="TrackHalf23" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.9461, 0, -2.32219, 0, 50, 0, 2.32219, 0, 49.9461, -1207.07, 0, -321.489)
+
+[node name="TrackHalf24" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.9461, 0, -2.32219, 0, 50, 0, 2.32219, 0, 49.9461, -1172.74, 0, -223.066)
+
+[node name="TrackHalf26" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.5675, 0, 6.56265, 0, 50, 0, -6.56265, 0, 49.5675, -1267.65, 0, -219.152)
+
+[node name="TrackHalf25" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(43.6525, 0, 24.3816, 0, 50, 0, -24.3816, 0, 43.6525, -1284.84, 0, -301.906)
+
+[node name="TrackHalf27" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(28.385, 0, 41.1618, 0, 50, 0, -41.1618, 0, 28.385, -1349.99, 0, -247.734)
+
+[node name="TrackHalf28" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-7.32488, -1.95273e-07, 49.4606, -3.72536e-08, 50, 1.91885e-07, -49.4606, -8.74086e-09, -7.32488, -1293.64, 0, -178.971)
+
+[node name="TrackHalf29" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.425861, -1.92196e-07, 49.9982, -3.72536e-08, 50, 1.91885e-07, -49.9982, -3.56178e-08, -0.425861, -1379.62, 0, -169.249)
+
+[node name="TrackHalf30" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.425861, -1.92196e-07, 49.9982, -3.72536e-08, 50, 1.91885e-07, -49.9982, -3.56178e-08, -0.425861, -1378.29, 0, -75.2167)
+
+[node name="TrackHalf31" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.425861, -1.92196e-07, 49.9982, -3.72536e-08, 50, 1.91885e-07, -49.9982, -3.56178e-08, -0.425861, -1286.03, 0, -82.361)
+
+[node name="TrackHalf32" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.425861, -1.92196e-07, 49.9982, -3.72536e-08, 50, 1.91885e-07, -49.9982, -3.56178e-08, -0.425861, -1284.87, 0, 9.42696)
+
+[node name="TrackHalf33" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.425861, -1.92196e-07, 49.9982, -3.72536e-08, 50, 1.91885e-07, -49.9982, -3.56178e-08, -0.425861, -1377.82, 0, 9.42696)
+
+[node name="TrackHalf34" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-8.77693, 0, -49.2236, 0, 50, 0, 49.2236, 0, -8.77693, -1002.82, 0, -423.302)
+
+[node name="TrackHalf35" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-19.3219, 0, -46.1158, 0, 50, 0, 46.1158, 0, -19.3219, -1059.43, 0, -467.009)
+
+[node name="TrackHalf2" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(47.7523, 0, -14.8229, 0, 50, 0, 14.8229, 0, 47.7523, -1252.08, 0, 62.2488)
+
+[node name="TrackHalf3" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(47.7523, 0, -14.8229, 0, 50, 0, 14.8229, 0, 47.7523, -1169.97, 0, 88.1069)
+
+[node name="TrackHalf4" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(47.7523, 0, -14.8229, 0, 50, 0, 14.8229, 0, 47.7523, -1099.72, 0, 109.773)
+
+[node name="TrackHalf5" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(17.0477, 0, -47.004, 0, 50, 0, 47.004, 0, 17.0477, -1369.79, 0, 96.662)
+
+[node name="TrackHalf6" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(43.0078, 0, -25.5016, 0, 50, 0, 25.5016, 0, 43.0078, -1316.26, 0, 160.627)
+
+[node name="TrackHalf7" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.9856, 0, -10.0206, 0, 50, 0, 10.0206, 0, 48.9856, -1230.72, 0, 193.959)
+
+[node name="TrackHalf8" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.9856, 0, -10.0206, 0, 50, 0, 10.0206, 0, 48.9856, -1134.66, 0, 213.647)
+
+[node name="TrackHalf9" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(24.9811, 0, -43.3122, 0, 50, 0, 43.3122, 0, 24.9811, -1031.41, 0, 155.237)
+
+[node name="TrackHalf10" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.0218182, 0, -50, 0, 50, 0, 50, 0, -0.0218182, -1006.26, 0, 232.423)
+
+[node name="TrackHalf11" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-26.5315, 0, -42.3802, 0, 50, 0, 42.3802, 0, -26.5315, -1022.04, 0, 309.65)
+
+[node name="TrackHalf12" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-43.8962, 0, -23.94, 0, 50, 0, 23.94, 0, -43.8962, -1079.89, 0, 368.696)
+
+[node name="TrackHalf13" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-49.9986, 0, -0.374369, 0, 50, 0, 0.374369, 0, -49.9986, -1154.58, 0, 391.37)
+
+[node name="TrackHalf14" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-45.9126, 0, -19.7997, 0, 50, 0, 19.7997, 0, -45.9126, -1140.69, 0, 237.506)
+
+[node name="TrackHalf15" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-47.8979, 0, -14.3455, 0, 50, 0, 14.3455, 0, -47.8979, -1227.69, 0, 269.49)
+
+[node name="TrackHalf16" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-49.9787, 0, -1.45976, 0, 50, 0, 1.45976, 0, -49.9787, -1318.62, 0, 283.951)
+
+[node name="TrackHalf17" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-48.0882, 0, -13.6938, 0, 50, 0, 13.6938, 0, -48.0882, -1409.49, 0, 296.642)
+
+[node name="TrackHalf36" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-41.4899, 0, -27.9032, 0, 50, 0, 27.9032, 0, -41.4899, -1493.54, 0, 336.97)
+
+[node name="TrackHalf37" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-9.50961, 0, -49.0873, 0, 50, 0, 49.0873, 0, -9.50961, -1547.46, 0, 403.636)
+
+[node name="TrackHalf38" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-41.2877, 0, -28.2015, 0, 50, 0, 28.2015, 0, -41.2877, -1237.01, 0, 417.287)
+
+[node name="TrackHalf39" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-32.8398, 0, -37.7034, 0, 50, 0, 37.7034, 0, -32.8398, -1307.25, 0, 479.625)
+
+[node name="TrackHalf40" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(6.28311, 0, -49.6037, 0, 50, 0, 49.6037, 0, 6.28311, -1330.82, 0, 556.761)
+
+[node name="TrackHalf41" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.169294, 0, -49.9997, 0, 50, 0, 49.9997, 0, -0.169294, -1557.32, 0, 494.438)
+
+[node name="TrackHalf42" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.169294, 0, -49.9997, 0, 50, 0, 49.9997, 0, -0.169294, -1557.89, 0, 587.92)
+
+[node name="TrackHalf43" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.169294, 0, -49.9997, 0, 50, 0, 49.9997, 0, -0.169294, -1558.42, 0, 673.508)
+
+[node name="TrackHalf44" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(40.5756, 0, -29.2167, 0, 50, 0, 29.2167, 0, 40.5756, -1531.2, 0, 752.443)
+
+[node name="TrackHalf45" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.3507, 0, 8.03197, 0, 50, 0, -8.03197, 0, 49.3507, -1456.95, 0, 774.148)
+
+[node name="TrackHalf46" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.7479, -5.65667e-07, -5.01461, 5.70284e-07, 50, 1.7364e-08, 5.01461, -7.44715e-08, 49.7479, -1377.26, 0, 773.481)
+
+[node name="TrackHalf47" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.97, -5.62042e-07, 10.0966, 5.70284e-07, 50, 1.7364e-08, -10.0966, 9.81527e-08, 48.97, -1287.51, 0, 585.901)
+
+[node name="TrackHalf48" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(45.9691, -5.31139e-07, 19.6682, 5.70284e-07, 50, 1.7364e-08, -19.6682, 2.08365e-07, 45.9691, -1205.46, 0, 559.098)
+
+[node name="TrackHalf49" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(45.9691, -5.31139e-07, 19.6682, 5.70284e-07, 50, 1.7364e-08, -19.6682, 2.08365e-07, 45.9691, -1131.43, 0, 527.088)
+
+[node name="TrackHalf50" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(45.9691, -5.31139e-07, 19.6682, 5.70284e-07, 50, 1.7364e-08, -19.6682, 2.08365e-07, 45.9691, -1054.02, 0, 493.798)
+
+[node name="TrackHalf51" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(19.7596, -2.41323e-07, 45.9299, 5.70284e-07, 50, 1.7364e-08, -45.9299, 5.17e-07, 19.7596, -994.777, 0, 435.184)
+
+[node name="TrackHalf52" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(19.7596, -2.41323e-07, 45.9299, 5.70284e-07, 50, 1.7364e-08, -45.9299, 5.17e-07, 19.7596, -958.845, 0, 351.763)
+
+[node name="TrackHalf53" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(43.6657, -5.06496e-07, 24.3579, 5.70284e-07, 50, 1.7364e-08, -24.3579, 2.62655e-07, 43.6657, -1291.86, 0, 756.366)
+
+[node name="TrackHalf54" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.2407, -5.54784e-07, 13.1465, 5.70284e-07, 50, 1.7364e-08, -13.1465, 1.33192e-07, 48.2407, -1205.6, 0, 720.961)
+
+[node name="TrackHalf55" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(46.3231, -5.34882e-07, 18.8193, 5.70284e-07, 50, 1.73639e-08, -18.8193, 1.9856e-07, 46.3231, -1116.98, 0, 691.485)
+
+[node name="TrackHalf56" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(42.558, -4.94517e-07, 26.2454, 5.70284e-07, 50, 1.73639e-08, -26.2454, 2.84567e-07, 42.558, -1048.25, 0, 659.227)
+
+[node name="TrackHalf57" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(38.2938, -4.47932e-07, 32.1494, 5.70284e-07, 50, 1.73639e-08, -32.1494, 3.53387e-07, 38.2938, -979.285, 0, 611.042)
+
+[node name="TrackHalf58" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(38.2938, -4.47932e-07, 32.1494, 5.70284e-07, 50, 1.73639e-08, -32.1494, 3.53387e-07, 38.2938, -914.33, 0, 556.461)
+
+[node name="TrackHalf59" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(38.2938, -4.47932e-07, 32.1494, 5.70284e-07, 50, 1.73639e-08, -32.1494, 3.53387e-07, 38.2938, -857.507, 0, 508.583)
+
+[node name="TrackHalf60" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-10.1009, 9.82017e-08, 48.9691, 5.70284e-07, 50, 1.73639e-08, -48.9691, 5.62033e-07, -10.1009, -818.739, 0, 435.423)
+
+[node name="TrackHalf61" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(10.0992, -1.32194e-07, 48.9694, 5.70284e-07, 50, 1.73639e-08, -48.9694, 5.55022e-07, 10.0992, -818.739, 0, 347.23)
+
+[node name="TrackHalf62" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(10.0992, -1.32194e-07, 48.9694, 5.70284e-07, 50, 1.73639e-08, -48.9694, 5.55022e-07, 10.0992, -930.765, 0, 262.015)
+
+[node name="TrackHalf63" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-13.6207, 1.38646e-07, 48.109, 5.70284e-07, 50, 1.73639e-08, -48.109, 5.53446e-07, -13.6207, -817.9, 0, 257.658)
+
+[node name="TrackHalf64" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(40.4744, -4.71833e-07, 29.3568, 5.70284e-07, 50, 1.73639e-08, -29.3568, 3.20778e-07, 40.4744, -895.397, 0, 192.102)
+
+[node name="TrackHalf65" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.7664, -5.65942e-07, -4.82789, 5.70284e-07, 50, 1.73639e-08, 4.82789, -7.23482e-08, 49.7664, -773.79, 0, 229.632)
+
+[node name="TrackHalf78" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(33.3845, -3.93699e-07, 37.222, 5.70284e-07, 50, 1.73639e-08, -37.222, 4.12948e-07, 33.3845, -713.685, 0, 196.745)
+
+[node name="TrackHalf79" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(1.5086, -3.45628e-08, 49.9772, 5.70284e-07, 50, 1.73639e-08, -49.9772, 5.695e-07, 1.5086, -677.148, 0, 123.671)
+
+[node name="TrackHalf80" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-12.2045, 1.22361e-07, 48.4876, 5.70284e-07, 50, 1.73639e-08, -48.4876, 5.57273e-07, -12.2045, -683.463, 0, 42.9281)
+
+[node name="TrackHalf81" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(11.1157, -1.43712e-07, 48.7487, 5.70284e-07, 50, 1.73639e-08, -48.7487, 5.52152e-07, 11.1157, -681.659, 0, -41.4231)
+
+[node name="TrackHalf82" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(25.4288, -3.04983e-07, 43.0509, 5.70284e-07, 50, 1.73639e-08, -43.0509, 4.82193e-07, 25.4288, -643.237, 0, -122.242)
+
+[node name="TrackHalf83" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(25.4288, -3.04983e-07, 43.0509, 5.70284e-07, 50, 1.73639e-08, -43.0509, 4.82193e-07, 25.4288, -595.541, 0, -193.786)
+
+[node name="TrackHalf84" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-24.5688, 2.651e-07, 43.5474, 5.70284e-07, 50, 1.73639e-08, -43.5474, 5.0522e-07, -24.5688, -590.241, 0, -267.98)
+
+[node name="TrackHalf85" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-24.5688, 2.651e-07, 43.5474, 5.70284e-07, 50, 1.73639e-08, -43.5474, 5.0522e-07, -24.5688, -636.261, 0, -350.739)
+
+[node name="TrackHalf86" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(38.6821, -4.52197e-07, 31.6812, 5.70284e-07, 50, 1.73639e-08, -31.6812, 3.47912e-07, 38.6821, -626.787, 0, -402.56)
+
+[node name="TrackHalf87" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.8845, -5.67786e-07, -3.39727, 5.70284e-07, 50, 1.73639e-08, 3.39727, -5.60722e-08, 49.8845, -552.312, 0, -427.006)
+
+[node name="TrackHalf88" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.8574, -5.69968e-07, 3.77419, 5.70284e-07, 50, 1.73639e-08, -3.77419, 2.57325e-08, 49.8574, -460.261, 0, -427.005)
+
+[node name="TrackHalf89" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.7769, -5.52517e-07, -10.9914, 5.70284e-07, 50, 1.73639e-08, 10.9914, -1.42304e-07, 48.7769, -457.035, 0, -502.41)
+
+[node name="TrackHalf90" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(48.7769, -5.52517e-07, -10.9914, 5.70284e-07, 50, 1.73639e-08, 10.9914, -1.42304e-07, 48.7769, -398.524, 0, -489.356)
+
+[node name="TrackHalf91" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(17.5047, -1.83387e-07, -46.8358, 5.70284e-07, 50, 1.73639e-08, 46.8358, -5.40273e-07, 17.5047, -349.082, 0, -441.957)
+
+[node name="TrackHalf92" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.796698, 2.64489e-08, -49.9937, 5.70284e-07, 50, 1.73639e-08, 49.9937, -5.69935e-07, -0.796698, -335.159, 0, -357.652)
+
+[node name="TrackHalf93" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-0.796698, 2.64489e-08, -49.9937, 5.70284e-07, 50, 1.73639e-08, 49.9937, -5.69935e-07, -0.796698, -336.622, 0, -268.854)
+
+[node name="TrackHalf94" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(17.074, -1.7842e-07, -46.9945, 5.70284e-07, 50, 1.73639e-08, 46.9945, -5.41934e-07, 17.074, -321.852, 0, -177.566)
+
+[node name="TrackHalf95" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(45.754, -5.14853e-07, -20.1637, 5.70284e-07, 50, 1.73639e-08, 20.1637, -2.4587e-07, 45.754, -84.4857, 0, 19.5886)
+
+[node name="TrackHalf96" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(38.6594, -4.29925e-07, -31.7089, 5.70284e-07, 50, 1.73639e-08, 31.7089, -3.75087e-07, 38.6594, -191.373, 0, -53.7868)
+
+[node name="TrackHalf98" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(31.4423, -3.72122e-07, 38.8765, 5.70284e-07, 50, 1.73639e-08, -38.8765, 4.32494e-07, 31.4423, -111.028, 0, -35.1053)
+
+[node name="TrackHalf99" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(31.4423, -3.72122e-07, 38.8765, 5.70284e-07, 50, 1.73639e-08, -38.8765, 4.32494e-07, 31.4423, -116.043, 0, -40.5376)
+
+[node name="TrackHalf100" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.7314, -5.69018e-07, 5.17609, 5.70284e-07, 50, 1.73639e-08, -5.17609, 4.17659e-08, 49.7314, -77.8077, 0, -71.669)
+
+[node name="TrackHalf101" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(13.5577, -1.71349e-07, 48.1268, 5.70284e-07, 50, 1.73639e-08, -48.1268, 5.44211e-07, 13.5577, -434.452, 0, -375.579)
+
+[node name="TrackHalf102" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-4.71498, 3.64908e-08, 49.7772, 5.70284e-07, 50, 1.73639e-08, -49.7772, 5.69381e-07, -4.71498, -444.458, 0, -286.706)
+
+[node name="TrackHalf103" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(6.99754, -9.7005e-08, 49.5079, 5.70284e-07, 50, 1.73639e-08, -49.5079, 5.62242e-07, 6.99754, -446.908, 0, -192.684)
+
+[node name="TrackHalf104" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-20.0199, 2.12429e-07, 45.8171, 5.70284e-07, 50, 1.73639e-08, -45.8171, 5.29528e-07, -20.0199, -438.155, 0, -103.457)
+
+[node name="TrackHalf105" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-49.3075, 5.59506e-07, 8.29283, 5.70284e-07, 50, 1.73638e-08, -8.29283, 1.11709e-07, -49.3075, -388.09, 0, -48.1708)
+
+[node name="TrackHalf106" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-49.3075, 5.59506e-07, 8.29283, 5.70284e-07, 50, 1.73638e-08, -8.29283, 1.11709e-07, -49.3075, -298.096, 0, -32.8135)
+
+[node name="TrackHalf107" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-25.1804, 2.72199e-07, 43.1966, 5.70284e-07, 50, 1.73639e-08, -43.1966, 5.01432e-07, -25.1804, -233.513, 0, 12.0466)
+
+[node name="TrackHalf108" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-25.1804, 2.72199e-07, 43.1966, 5.70284e-07, 50, 1.73639e-08, -43.1966, 5.01432e-07, -25.1804, -186.332, 0, 95.1924)
+
+[node name="TrackHalf109" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-34.9663, 3.86403e-07, 35.7401, 5.70284e-07, 50, 1.73638e-08, -35.7401, 4.19784e-07, -34.9663, -136.445, 0, 164.029)
+
+[node name="TrackHalf110" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-44.7724, 5.1839e-07, -22.2584, 5.70284e-07, 50, 1.73638e-08, 22.2584, -2.38323e-07, -44.7724, -78.436, 0, 173.862)
+
+[node name="TrackHalf111" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-27.0568, 3.23204e-07, -42.0468, 5.70284e-07, 50, 1.73638e-08, 42.0468, -4.70176e-07, -27.0568, -15.3686, 0, 116.983)
+
+[node name="TrackHalf112" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-19.6088, 2.39625e-07, -45.9945, 5.70284e-07, 50, 1.73638e-08, 45.9945, -5.17789e-07, -19.6088, 18.7498, 0, 55.3265)
+
+[node name="TrackHalf97" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(42.4643, -4.75167e-07, -26.3967, 5.70284e-07, 50, 1.73639e-08, 26.3967, -3.1582e-07, 42.4643, -269.303, 0, -109.29)
+
+[node name="TrackHalf66" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(30.4381, -3.60942e-07, 39.6677, 5.70284e-07, 50, 1.73639e-08, -39.6677, 4.41866e-07, 30.4381, -832.46, 0, 135.007)
+
+[node name="TrackHalf67" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(5.94705, -8.50709e-08, 49.6451, 5.70284e-07, 50, 1.73639e-08, -49.6451, 5.6417e-07, 5.94705, -798.777, 0, 52.4398)
+
+[node name="TrackHalf68" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(5.94705, -8.50709e-08, 49.6451, 5.70284e-07, 50, 1.73639e-08, -49.6451, 5.6417e-07, 5.94705, -789.069, 0, -29.6248)
+
+[node name="TrackHalf69" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(22.7446, -2.74881e-07, 44.5273, 5.70284e-07, 50, 1.73639e-08, -44.5273, 4.99965e-07, 22.7446, -763.875, 0, -117.391)
+
+[node name="TrackHalf70" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(34.7668, -4.09018e-07, 35.9342, 5.70284e-07, 50, 1.73639e-08, -35.9342, 3.9778e-07, 34.7668, -712.067, 0, -191.874)
+
+[node name="TrackHalf71" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-19.4112, 2.05395e-07, 46.0783, 5.70284e-07, 50, 1.73639e-08, -46.0783, 5.32295e-07, -19.4112, -712.922, 0, -265.486)
+
+[node name="TrackHalf72" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(-47.9667, 5.42191e-07, 14.1137, 5.70284e-07, 50, 1.73639e-08, -14.1137, 1.77634e-07, -47.9667, -772.318, 0, -318.073)
+
+[node name="TrackHalf73" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(3.96645, -6.25493e-08, 49.8424, 5.70284e-07, 50, 1.73639e-08, -49.8424, 5.67109e-07, 3.96645, -811.594, 0, -363.486)
+
+[node name="TrackHalf74" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(28.3793, -3.37981e-07, 41.1658, 5.70284e-07, 50, 1.73639e-08, -41.1658, 4.59668e-07, 28.3793, -784.021, 0, -450.468)
+
+[node name="TrackHalf75" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(46.5877, -5.3767e-07, 18.1544, 5.70284e-07, 50, 1.73639e-08, -18.1544, 1.90885e-07, 46.5877, -721.655, 0, -500.194)
+
+[node name="TrackHalf76" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.4234, -5.61078e-07, -7.57167, 5.70284e-07, 50, 1.73639e-08, 7.57167, -1.03524e-07, 49.4234, -636.777, 0, -509.146)
+
+[node name="TrackHalf77" parent="." instance=ExtResource("2_itmsk")]
+transform = Transform3D(49.6688, -5.68501e-07, 5.74599, 5.70284e-07, 50, 1.73639e-08, -5.74599, 4.8288e-08, 49.6688, -547.921, 0, -505.167)

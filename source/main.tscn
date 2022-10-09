@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgx4o0k1bn4i2"]
+[gd_scene load_steps=9 format=3 uid="uid://dgx4o0k1bn4i2"]
 
 [ext_resource type="Script" path="res://Main.cs" id="1_b4cpp"]
 [ext_resource type="Shader" path="res://shaders/dither/dither.gdshader" id="1_g8bbi"]
 [ext_resource type="Texture2D" uid="uid://defm5hrgrt8jh" path="res://shaders/dither/palette_hollow.png" id="3_c5ee0"]
 [ext_resource type="Texture2D" uid="uid://c1qfpa4hpd87n" path="res://shaders/dither/bayer16tile2.png" id="3_l5c2l"]
 [ext_resource type="PackedScene" uid="uid://daryhni7dt74n" path="res://ship/ship.tscn" id="4_ndpmt"]
+[ext_resource type="PackedScene" uid="uid://b7qk8tsnvxyxl" path="res://tracks/track_1.tscn" id="6_irdc7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hbier"]
 size = Vector3(500, 1, 500)
@@ -27,6 +28,7 @@ transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -
 shadow_enabled = true
 
 [node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(2.44669, 0, 0, 0, 1, 0, 0, 0, 1.52562, -354.066, 0, -121.487)
 
 [node name="CollisionShape3d" type="CollisionShape3D" parent="Ground"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37728, 0)
@@ -66,6 +68,9 @@ text = "Join"
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://ship/ship.tscn")
 spawn_path = NodePath("../SubViewportContainer/SubViewport")
+
+[node name="Track1" parent="." instance=ExtResource("6_irdc7")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.27362, 0, -0.00549316)
 
 [connection signal="pressed" from="NetworkMenu/HostButton" to="." method="Host"]
 [connection signal="pressed" from="NetworkMenu/JoinButton" to="." method="Join"]

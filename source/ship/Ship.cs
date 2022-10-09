@@ -1,4 +1,5 @@
 using Godot;
+using Godot.Collections;
 
 public partial class Ship : RigidBody3D {
 	[Export] private float maxForce = 50f; // Maximum (full input) force that can be added per physics frame.
@@ -37,6 +38,8 @@ public partial class Ship : RigidBody3D {
 			Steer();
 			Accelerate();
 		}
+
+		Position *= new Vector3(1, 0, 1); // Kinda weird way of locking the Y position	
 
 		base._PhysicsProcess(_delta);
 	}
@@ -90,10 +93,11 @@ public partial class Ship : RigidBody3D {
 			Vector3 _rayEnd = _rayOrigin + camera.ProjectRayNormal(_mousePosition) * 2000;
 			
 			// Get the position at which the ray intersects with the invisible hitbox plane.
-			Vector3 _lookTarget = GetWorld3d().DirectSpaceState.IntersectRay(
-				PhysicsRayQueryParameters3D.Create(_rayOrigin, _rayEnd))["position"].AsVector3();
-			_lookTarget.y = gfx.Position.y;  // Reset the Y position to prevent rotating along an unwanted axis.
+			Dictionary _collision = GetWorld3d().DirectSpaceState
+				.IntersectRay(PhysicsRayQueryParameters3D.Create(_rayOrigin, _rayEnd));
 			
+			Vector3 _lookTarget = _collision["position"].AsVector3();
+			_lookTarget.y = gfx.Position.y; // Reset the Y position to prevent rotating along an unwanted axis.
 			gfx.LookAt(_lookTarget);
 		}
 	}

@@ -1,5 +1,5 @@
 res://main.tscn
 res://ship/ship.tscn
-res://tracks/track_generator.tscn
-res://tracks/pieces/track_horizontal.tscn
-res://tracks/pieces/track.tres
+res://tracks/pieces/track_straight.tscn
+res://tracks/track_1.tscn
+res://tracks/pieces/track_half.tscn

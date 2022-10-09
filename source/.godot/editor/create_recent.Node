@@ -1,5 +1,8 @@
-GridMap
 Node3D
+CollisionShape3D
+StaticBody3D
+RigidBody3D
+GridMap
 Node
 CSGBox3D
 DirectionalLight3D

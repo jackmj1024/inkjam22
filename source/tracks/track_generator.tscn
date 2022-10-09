@@ -1,43 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://cy56463mohbxs"]
+[gd_scene load_steps=2 format=3 uid="uid://cbaxgiv2uxswy"]
 
-[ext_resource type="Script" path="res://tracks/TrackGenerator.cs" id="1_in4u0"]
-[ext_resource type="MeshLibrary" uid="uid://ckmwukkmujo7r" path="res://tracks/pieces/track.tres" id="2_ugp1a"]
+[sub_resource type="CSharpScript" id="CSharpScript_dw08k"]
+script/source = "using Godot;
+using System;
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8bcrj"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_wdv1m"]
-material = SubResource("StandardMaterial3D_8bcrj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2eya"]
-albedo_color = Color(0.207843, 0, 0.313726, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_q0u22"]
-material = SubResource("StandardMaterial3D_r2eya")
-
-[sub_resource type="MeshLibrary" id="MeshLibrary_gt1fq"]
-item/0/name = "Used"
-item/0/mesh = SubResource("BoxMesh_wdv1m")
-item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-item/0/shapes = []
-item/0/navmesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-item/1/name = "Locked"
-item/1/mesh = SubResource("BoxMesh_q0u22")
-item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-item/1/shapes = []
-item/1/navmesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-metadata/_editor_source_scene = "res://tracks/debug/empty.tscn"
+public partial class TrackGenerator : Node3D
+{
+}
+"
 
 [node name="TrackGenerator" type="Node3D"]
-script = ExtResource("1_in4u0")
-debugDelay = 0.1
-linePriority = 4
-tracKMinLength = 15
-tracKMaxLength = 80
-
-[node name="DebugMap" type="GridMap" parent="."]
-mesh_library = SubResource("MeshLibrary_gt1fq")
-metadata/_editor_floor_ = Vector3(0, 0, 0)
-
-[node name="Track" type="GridMap" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00884545, 0.0161462, -0.000891685)
-mesh_library = ExtResource("2_ugp1a")
+script = SubResource("CSharpScript_dw08k")
+pieces = [null]

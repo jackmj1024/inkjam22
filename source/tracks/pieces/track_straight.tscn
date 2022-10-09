@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=3 uid="uid://c136bbchpcbr2"]
+
+[ext_resource type="PackedScene" uid="uid://dow1yuelk1soj" path="res://tracks/pieces/rocks/stone_tallA.glb" id="1_5wm23"]
+[ext_resource type="Script" path="res://tracks/pieces/TrackPiece.cs" id="1_26ecg"]
+[ext_resource type="PackedScene" uid="uid://c4ib7d45b0neo" path="res://tracks/pieces/rocks/stone_tallB.glb" id="2_orexq"]
+[ext_resource type="PackedScene" uid="uid://bm7ve5wv5mscg" path="res://tracks/pieces/rocks/stone_tallC.glb" id="3_cfy8d"]
+[ext_resource type="PackedScene" uid="uid://e1evkv8md8yx" path="res://tracks/pieces/rocks/stone_tallD.glb" id="4_o133b"]
+[ext_resource type="PackedScene" uid="uid://d06c7g3vnqba" path="res://tracks/pieces/rocks/stone_tallE.glb" id="5_kb64w"]
+[ext_resource type="PackedScene" uid="uid://skylenhwq13q" path="res://tracks/pieces/rocks/stone_tallF.glb" id="6_f8y1j"]
+[ext_resource type="PackedScene" uid="uid://0xugsqy0hw64" path="res://tracks/pieces/rocks/stone_tallG.glb" id="7_rt32v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k6iir"]
+size = Vector3(2.6405, 1, 0.623653)
+
+[node name="TrackStraight" type="Node3D"]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+script = ExtResource("1_26ecg")
+
+[node name="Node3d" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0221e-07, 0, -0.00368005)
+
+[node name="stone_tallA2" parent="Node3d" instance=ExtResource("1_5wm23")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.622674, 0.0511621, -0.734445)
+
+[node name="stone_tallA3" parent="Node3d" instance=ExtResource("1_5wm23")]
+transform = Transform3D(0.75, 0, -7.10543e-15, 0, 0.75, 0, 7.10543e-15, 0, 0.75, 0.622674, 0.0511621, -0.734445)
+
+[node name="stone_tallB2" parent="Node3d" instance=ExtResource("2_orexq")]
+transform = Transform3D(0.653853, 0, -0.367391, 0, 0.75, 0, 0.367391, 0, 0.653853, -0.363704, 0, -0.696825)
+
+[node name="stone_tallC2" parent="Node3d" instance=ExtResource("3_cfy8d")]
+transform = Transform3D(0.126328, 0, 0.739284, 0, 0.75, 0, -0.739284, 0, 0.126328, 0.284905, 0, -0.588533)
+
+[node name="stone_tallD2" parent="Node3d" instance=ExtResource("4_o133b")]
+transform = Transform3D(0.191027, 0, -0.725264, 0, 0.75, 0, 0.725264, 0, 0.191027, 0.818549, 0, -0.547171)
+
+[node name="stone_tallE2" parent="Node3d" instance=ExtResource("5_kb64w")]
+transform = Transform3D(0.75, 0, -4.26326e-14, 0, 0.75, 0, 4.26326e-14, 0, 0.75, -0.693855, 0.00137374, -0.609401)
+
+[node name="stone_tallF2" parent="Node3d" instance=ExtResource("6_f8y1j")]
+transform = Transform3D(-0.241476, 0, -0.710063, 0, 0.75, 0, 0.710063, 0, -0.241476, 0.0332133, 0, -0.686437)
+
+[node name="stone_tallG2" parent="Node3d" instance=ExtResource("7_rt32v")]
+transform = Transform3D(0.121991, 0, -0.740012, 0, 0.75, 0, 0.740012, 0, 0.121991, -0.799784, -1.19209e-07, -0.580152)
+
+[node name="StaticBody3d" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="StaticBody3d"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.00418785, 0.0511621, -0.625927)
+shape = SubResource("BoxShape3D_k6iir")
+
+[node name="CollisionShape3d2" type="CollisionShape3D" parent="StaticBody3d"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.00526741, 0.0511621, 0.637993)
+shape = SubResource("BoxShape3D_k6iir")
+
+[node name="Node3d2" type="Node3D" parent="."]
+
+[node name="stone_tallA" parent="Node3d2" instance=ExtResource("1_5wm23")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.622674, 0.0511621, -0.734445)
+
+[node name="stone_tallB" parent="Node3d2" instance=ExtResource("2_orexq")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.348797, 0, -0.682721)
+
+[node name="stone_tallC" parent="Node3d2" instance=ExtResource("3_cfy8d")]
+transform = Transform3D(-0.695735, 0, 0.280093, 0, 0.75, 0, -0.280093, 0, -0.695735, 0.263728, 0, -0.563554)
+
+[node name="stone_tallD" parent="Node3d2" instance=ExtResource("4_o133b")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.588825, 0, -0.564792)
+
+[node name="stone_tallD2" parent="Node3d2" instance=ExtResource("4_o133b")]
+transform = Transform3D(-0.404409, 0, 0.631628, 0, 0.75, 0, -0.631628, 0, -0.404409, 0.804733, 0, -0.524249)
+
+[node name="stone_tallE" parent="Node3d2" instance=ExtResource("5_kb64w")]
+transform = Transform3D(0.706881, 0, -0.250639, 0, 0.75, 0, 0.250639, 0, 0.706881, -0.789629, 0.000760873, -0.801237)
+
+[node name="stone_tallF" parent="Node3d2" instance=ExtResource("6_f8y1j")]
+transform = Transform3D(0.0455515, 0, -0.748615, 0, 0.75, 0, 0.748615, 0, 0.0455515, -0.000146046, 0, 0.575116)
+
+[node name="stone_tallF3" parent="Node3d2" instance=ExtResource("6_f8y1j")]
+transform = Transform3D(0.0455515, 0, -0.748615, 0, 0.75, 0, 0.748615, 0, 0.0455515, -0.0878329, 0, -0.568406)
+
+[node name="stone_tallF2" parent="Node3d2" instance=ExtResource("6_f8y1j")]
+transform = Transform3D(0.185186, 0, -0.726778, 0, 0.75, 0, 0.726778, 0, 0.185186, 0.0729743, 0, -0.783036)
+
+[node name="stone_tallG" parent="Node3d2" instance=ExtResource("7_rt32v")]
+transform = Transform3D(0.121991, 0, -0.740012, 0, 0.75, 0, 0.740012, 0, 0.121991, -0.799895, -1.19209e-07, -0.566348)
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="."]
