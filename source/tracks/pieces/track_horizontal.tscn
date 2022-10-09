@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwpgo2fqgpk4y"]
+
+[ext_resource type="PackedScene" uid="uid://dow1yuelk1soj" path="res://tracks/pieces/rocks/stone_tallA.glb" id="1_o1a86"]
+[ext_resource type="PackedScene" uid="uid://c4ib7d45b0neo" path="res://tracks/pieces/rocks/stone_tallB.glb" id="2_i2u02"]
+[ext_resource type="PackedScene" uid="uid://bm7ve5wv5mscg" path="res://tracks/pieces/rocks/stone_tallC.glb" id="3_kiapc"]
+[ext_resource type="PackedScene" uid="uid://e1evkv8md8yx" path="res://tracks/pieces/rocks/stone_tallD.glb" id="4_us23f"]
+[ext_resource type="PackedScene" uid="uid://d06c7g3vnqba" path="res://tracks/pieces/rocks/stone_tallE.glb" id="5_43hai"]
+[ext_resource type="PackedScene" uid="uid://skylenhwq13q" path="res://tracks/pieces/rocks/stone_tallF.glb" id="6_rbf6o"]
+[ext_resource type="PackedScene" uid="uid://0xugsqy0hw64" path="res://tracks/pieces/rocks/stone_tallG.glb" id="7_16opg"]
+
+[node name="TrackHorizontal" type="Node3D"]
+
+[node name="Ref" type="CSGBox3D" parent="."]
+visible = false
+size = Vector3(2, 0, 2)
+
+[node name="stone_tallA" parent="." instance=ExtResource("1_o1a86")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.622674, 0.0511621, -0.734445)
+
+[node name="stone_tallB" parent="." instance=ExtResource("2_i2u02")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.348797, 0, -0.682721)
+
+[node name="stone_tallC" parent="." instance=ExtResource("3_kiapc")]
+transform = Transform3D(-0.695735, 0, 0.280093, 0, 0.75, 0, -0.280093, 0, -0.695735, 0.177361, 0, -0.526827)
+
+[node name="stone_tallD" parent="." instance=ExtResource("4_us23f")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.785639, 0, -0.443458)
+
+[node name="stone_tallE" parent="." instance=ExtResource("5_43hai")]
+transform = Transform3D(0.706881, 0, -0.250639, 0, 0.75, 0, 0.250639, 0, 0.706881, -0.789629, 0.000760873, -0.801237)
+
+[node name="stone_tallF" parent="." instance=ExtResource("6_rbf6o")]
+transform = Transform3D(-0.241476, 0, -0.710063, 0, 0.75, 0, 0.710063, 0, -0.241476, 0.0688615, 0, -0.791261)
+
+[node name="stone_tallG" parent="." instance=ExtResource("7_16opg")]
+transform = Transform3D(0.121991, 0, -0.740012, 0, 0.75, 0, 0.740012, 0, 0.121991, -0.803595, -1.19209e-07, -0.444716)
+
+[node name="Node3d" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0221e-07, 0, -0.00368005)
+
+[node name="stone_tallA2" parent="Node3d" instance=ExtResource("1_o1a86")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.622674, 0.0511621, -0.734445)
+
+[node name="stone_tallB2" parent="Node3d" instance=ExtResource("2_i2u02")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.348797, 0, -0.682721)
+
+[node name="stone_tallC2" parent="Node3d" instance=ExtResource("3_kiapc")]
+transform = Transform3D(-0.695735, 0, 0.280093, 0, 0.75, 0, -0.280093, 0, -0.695735, 0.177361, 0, -0.526827)
+
+[node name="stone_tallD2" parent="Node3d" instance=ExtResource("4_us23f")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.785639, 0, -0.443458)
+
+[node name="stone_tallE2" parent="Node3d" instance=ExtResource("5_43hai")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -0.80915, 0, -0.812155)
+
+[node name="stone_tallF2" parent="Node3d" instance=ExtResource("6_rbf6o")]
+transform = Transform3D(-0.241476, 0, -0.710063, 0, 0.75, 0, 0.710063, 0, -0.241476, 0.0688615, 0, -0.791261)
+
+[node name="stone_tallG2" parent="Node3d" instance=ExtResource("7_16opg")]
+transform = Transform3D(0.121991, 0, -0.740012, 0, 0.75, 0, 0.740012, 0, 0.121991, -0.803595, -1.19209e-07, -0.444716)

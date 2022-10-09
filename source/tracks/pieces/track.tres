@@ -1,0 +1,4 @@
+[gd_resource type="MeshLibrary" format=3 uid="uid://ckmwukkmujo7r"]
+
+[resource]
+metadata/_editor_source_scene = "res://tracks/pieces/track_horizontal.tscn"

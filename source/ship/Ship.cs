@@ -26,13 +26,13 @@ public partial class Ship : RigidBody3D {
 		synchronizer = GetNode<MultiplayerSynchronizer>("MultiplayerSynchronizer");
 		
 		synchronizer.SetMultiplayerAuthority(Name.ToString().ToInt());
-		camera.Current = synchronizer.IsMultiplayerAuthority();
 		
 		baseDamping = LinearDamp; // Sets baseDamping based on the RigidBody's linear damping setting in the inspector.
 		base._Ready();
 	}
 
 	public override void _PhysicsProcess(double _delta) {
+		camera.Current = synchronizer.IsMultiplayerAuthority();
 		if(synchronizer.IsMultiplayerAuthority() && controlMode != ControlMode.Disabled) {
 			Steer();
 			Accelerate();
