@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://byex6puwbe5jl"]
+[gd_scene load_steps=11 format=3 uid="uid://byex6puwbe5jl"]
 
 [ext_resource type="PackedScene" uid="uid://dow1yuelk1soj" path="res://tracks/pieces/rocks/stone_tallA.glb" id="1_5wm23"]
 [ext_resource type="Script" path="res://tracks/pieces/TrackPiece.cs" id="1_26ecg"]
@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://skylenhwq13q" path="res://tracks/pieces/rocks/stone_tallF.glb" id="6_f8y1j"]
 [ext_resource type="PackedScene" uid="uid://0xugsqy0hw64" path="res://tracks/pieces/rocks/stone_tallG.glb" id="7_rt32v"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rhft7"]
+bounce = 0.5
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_k6iir"]
 size = Vector3(2.6405, 1, 0.783134)
 
@@ -18,6 +21,7 @@ script = ExtResource("1_26ecg")
 
 [node name="StaticBody3d" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.626799)
+physics_material_override = SubResource("PhysicsMaterial_rhft7")
 
 [node name="CollisionShape3d" type="CollisionShape3D" parent="StaticBody3d"]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.00418785, 0.33354, -0.692304)

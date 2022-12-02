@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dgx4o0k1bn4i2"]
+[gd_scene load_steps=12 format=3 uid="uid://dgx4o0k1bn4i2"]
 
 [ext_resource type="Script" path="res://Main.cs" id="1_b4cpp"]
 [ext_resource type="Shader" path="res://shaders/dither/dither.gdshader" id="1_g8bbi"]
@@ -6,9 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://c1qfpa4hpd87n" path="res://shaders/dither/bayer16tile2.png" id="3_l5c2l"]
 [ext_resource type="PackedScene" uid="uid://daryhni7dt74n" path="res://ship/ship.tscn" id="4_ndpmt"]
 [ext_resource type="PackedScene" uid="uid://b7qk8tsnvxyxl" path="res://tracks/track_1.tscn" id="6_irdc7"]
+[ext_resource type="Texture2D" uid="uid://duguh8gia1xat" path="res://ship/skull-crossed-bones.svg" id="6_ujwha"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hbier"]
-size = Vector3(500, 1, 500)
+size = Vector3(500, 1, 747.031)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0ecbi"]
 shader = ExtResource("1_g8bbi")
@@ -19,7 +20,25 @@ shader_parameter/u_dither_size = 2
 shader_parameter/u_dither_tex = ExtResource("3_l5c2l")
 shader_parameter/u_offset = null
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_u0rpk"]
+size = Vector3(1, 49.3913, 1)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_dxumi"]
+properties/0/path = NodePath("..:gameStarted")
+properties/0/spawn = true
+properties/0/sync = true
+properties/1/path = NodePath("../StatusLabel:text")
+properties/1/spawn = true
+properties/1/sync = true
+properties/2/path = NodePath("../StatusLabel:visible")
+properties/2/spawn = true
+properties/2/sync = true
+properties/3/path = NodePath("..:numFinished")
+properties/3/spawn = true
+properties/3/sync = true
+
 [node name="Main" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.89645)
 script = ExtResource("1_b4cpp")
 playerObject = ExtResource("4_ndpmt")
 
@@ -41,36 +60,94 @@ offset_bottom = 1080.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(700, 700)
+size = Vector2i(1000, 1000)
 render_target_update_mode = 4
-
-[node name="NetworkMenu" type="VBoxContainer" parent="."]
-offset_right = 90.0
-offset_bottom = 101.0
-
-[node name="IPField" type="LineEdit" parent="NetworkMenu"]
-offset_right = 90.0
-offset_bottom = 31.0
-placeholder_text = "IP Address"
-
-[node name="HostButton" type="Button" parent="NetworkMenu"]
-offset_top = 35.0
-offset_right = 90.0
-offset_bottom = 66.0
-text = "Host"
-
-[node name="JoinButton" type="Button" parent="NetworkMenu"]
-offset_top = 70.0
-offset_right = 90.0
-offset_bottom = 101.0
-text = "Join"
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://ship/ship.tscn")
 spawn_path = NodePath("../SubViewportContainer/SubViewport")
 
+[node name="NetworkMenu" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2i(1000, 1000)
+offset_right = 691.0
+offset_bottom = 770.0
+
+[node name="Label" type="Label" parent="NetworkMenu"]
+offset_right = 1000.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 64
+text = "Rattle Me Bones!"
+horizontal_alignment = 1
+
+[node name="Lore" type="Label" parent="NetworkMenu"]
+offset_top = 95.0
+offset_right = 1000.0
+offset_bottom = 147.0
+text = "The great skeleton pirate legends gather at the tracks to decide who sails the fastest of them all...Gather your crew and prove
+ that you're thesauciest scallywag to ever drift the seven seas!"
+horizontal_alignment = 1
+
+[node name="IPField" type="LineEdit" parent="NetworkMenu"]
+offset_top = 151.0
+offset_right = 1000.0
+offset_bottom = 182.0
+placeholder_text = "IP Address"
+
+[node name="HostButton" type="Button" parent="NetworkMenu"]
+offset_top = 186.0
+offset_right = 1000.0
+offset_bottom = 217.0
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="NetworkMenu"]
+offset_top = 221.0
+offset_right = 1000.0
+offset_bottom = 252.0
+text = "Join"
+
+[node name="TextureRect" type="TextureRect" parent="NetworkMenu"]
+texture_filter = 4
+offset_top = 256.0
+offset_right = 1000.0
+offset_bottom = 768.0
+texture = ExtResource("6_ujwha")
+stretch_mode = 3
+
+[node name="Info" type="Label" parent="NetworkMenu"]
+offset_top = 772.0
+offset_right = 1000.0
+offset_bottom = 980.0
+text = "Controller: Aim with left joystick, right trigger to add acceleration, left trigger to brake.
+Mouse: Aim with mouse pointer, left click to add acceleration, right click to brake.
+
+(A controller is highly recommended as it supports analog trigger input (different levels of acceleration) 
+and because mouse input is somewhat buggy.)
+
+Running jam release version 1 (\"BONES\")
+Created in one week for the MSOE Game Dev Club's 2022 InkJam (Week 1)"
+vertical_alignment = 2
+
 [node name="Track1" parent="." instance=ExtResource("6_irdc7")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.27362, 0, -0.00549316)
+
+[node name="FinishLine" type="CSGBox3D" parent="."]
+transform = Transform3D(30.0445, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 6.96015)
+size = Vector3(1, 0.002, 1)
+
+[node name="FinishArea" type="Area3D" parent="FinishLine"]
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="FinishLine/FinishArea"]
+shape = SubResource("BoxShape3D_u0rpk")
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+offset_right = 57.0
+offset_bottom = 26.0
+text = "Lap 0/3"
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+root_path = NodePath(".")
+replication_config = SubResource("SceneReplicationConfig_dxumi")
 
 [connection signal="pressed" from="NetworkMenu/HostButton" to="." method="Host"]
 [connection signal="pressed" from="NetworkMenu/JoinButton" to="." method="Join"]
